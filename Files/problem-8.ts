@@ -9,7 +9,7 @@ type infomation = {
 }
 
 
-// Declear function 
+// Declear function to cheak the object properity
 function validateKeys<T extends object>(value : T, key : (keyof T)[]){
      const result = key.filter((k => k in value)).length === key.length;
      console.log(result)
